@@ -2,9 +2,6 @@
 
 An autonomous, framework-free AI worker capable of completing natural language tasks across local files, websites, and internal company apps using the Gemini API, Playwright browser automation, working memory, reliability guards, and independent task verification.
 
-Built from scratch using Python with **no LangChain, LangGraph, or CrewAI**.
-
----
 
 ## Agent Loop Architecture
 
