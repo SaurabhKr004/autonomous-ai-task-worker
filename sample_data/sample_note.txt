@@ -1,0 +1,7 @@
+This is a sample text file for testing the agent's file-reading tools.
+
+Project: Autonomous AI Task Worker
+Status: Phase 1 — Minimal agent loop with file tools
+Date: 2026-10-10
+
+The agent should be able to list this file and read its contents.

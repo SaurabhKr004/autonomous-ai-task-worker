@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Invoices</h2>
+<a href="{{ url_for('add_invoice') }}" id="nav-add-invoice">Add New Invoice</a>
+<br><br>
+<table id="invoice-list">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Vendor</th>
+            <th>Amount</th>
+            <th>Due Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for inv in invoices %}
+        <tr class="invoice-item">
+            <td>{{ inv.id }}</td>
+            <td class="vendor-name">{{ inv.vendor }}</td>
+            <td class="invoice-amount">${{ "%.2f"|format(inv.amount) }}</td>
+            <td class="due-date">{{ inv.due_date }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,22 @@
+# Autonomous AI Task Worker — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Gemini API client (Google's official SDK)
+google-genai>=1.0.0
+
+# Load .env files (for GEMINI_API_KEY)
+python-dotenv>=1.0.0
+
+# Phase 2: Mock Company App
+Flask>=3.0.0
+pytest>=8.0.0
+
+# Phase 3: Browser Automation
+playwright>=1.40.0
+
+# Phase 5: Interactive Agent UI
+streamlit>=1.35.0
+
+# Document & PDF Parsing
+pdfplumber>=0.10.0
+
